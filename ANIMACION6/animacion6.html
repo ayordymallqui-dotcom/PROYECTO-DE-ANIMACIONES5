@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIP PATH</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url(img/fondo6.png);
+            background-size: cover;
+        }
+        .contenedorpadre{
+            display: flex;
+        }
+        .contenedor {
+            width: 400px;
+            height: 500px;
+            background-color: transparent;
+            position: relative;
+            overflow: hidden;
+            margin-left: 220px;
+        }
+        .gorrito {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/gorrito.jpg);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);;
+            position: absolute;
+            left: 150px;
+            top: 100px;
+        }
+        .cabeza {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/cara.jpg);
+            background-size: cover;
+            clip-path: circle(50.0% at 50% 50%);
+            position: absolute;
+            left: 150px;
+            top: 200px;
+        }
+        .cuerpo {
+            width: 150px;
+            height: 150px;
+            background-image: url(img/cuerpomuzculoso.png);
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(24% 21%, 77% 21%, 100% 50%, 81% 74%, 20% 74%, 0% 50%);
+            position: absolute;
+            left: 124px;
+            top: 255px;
+        }
+        .pieD {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            clip-path: ellipse(28% 16% at 52% 52%);
+            position: absolute;
+            left: 130px;
+            top: 360px;
+        }
+        .pieI {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            clip-path: ellipse(28% 16% at 52% 52%);
+            position: absolute;
+            left: 185px;
+            top: 360px;
+        }
+        .piernaD {
+            width: 60px;
+            height: 60px;
+            background-image: url(img/cuerpo1.jpg);
+            clip-path: inset(9% 34% 11% 18%);
+            position: absolute;
+            left: 160px;
+            top: 335px;
+        }
+        .piernaI {
+            width: 60px;
+            height: 60px;
+            background-image: url(img/cuerpo1.jpg);
+            clip-path: inset(9% 34% 11% 18%);
+            position: absolute;
+            left: 190px;
+            top: 335px;
+        }
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            margin:0 auto;
+            font-size: 50px;
+
+        }
+        #texto{
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        a:hover {
+            color:rgb(255, 4, 4);
+        }
+        a {
+        color: aliceblue;
+        }
+        .contenedor2 {
+            width: 400px;
+            height: 500px;
+            background-color: transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        .gorrito2 {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/gorrito.jpg);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);;
+            position: absolute;
+            left: 150px;
+            top: 100px;
+        }
+        .cabeza2 {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/cara2.jpg);
+            background-size: cover;
+            clip-path: circle(50.0% at 50% 50%);
+            position: absolute;
+            left: 150px;
+            top: 200px;
+        }
+        .cuerpo2 {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/cuerpo1.jpg);
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(41% 0, 55% 0, 79% 100%, 18% 100%);
+            position: absolute;
+            left: 150px;
+            top: 290px;
+        }
+        
+        .brazoD2 {
+            width: 80px;
+            height: 80px;
+            background-image: url(img/brazoI.png);
+            background-size: contain;/*hace que encaje la imagen a cambio del cover*/
+            background-repeat: no-repeat;
+            background-position: center;
+            clip-path: polygon(27% 25%, 86% 25%, 87% 64%, 28% 65%, 6% 46%);
+            position: absolute;
+            left: 120px;
+            top: 300px;
+        }
+        .brazoI2 {
+            width: 80px;
+            height: 80px;
+            background-image: url(img/brazoD.jpg);
+             background-size: contain;/*hace que encaje la imagen a cambio del cover*/
+            background-repeat: no-repeat;
+            background-position: center;
+            clip-path: polygon(0 23%, 70% 23%, 86% 41%, 73% 64%, 0 63%);
+            position: absolute;
+            left: 205px;
+            top: 300px;
+        }
+        .pieD2 {
+            width: 80px;
+            height: 80px;
+            background-color: black;
+            clip-path: ellipse(28% 16% at 52% 52%);
+            position: absolute;
+            left: 130px;
+            top: 360px;
+        }
+        .pieI2 {
+            width: 80px;
+            height: 80px;
+            background-color: black;
+            clip-path: ellipse(28% 16% at 52% 52%);
+            position: absolute;
+            left: 185px;
+            top: 360px;
+        }
+        ol {
+            display: flex;
+            margin-top: 20px;
+        }
+        li {
+            margin: 0 auto;
+            display: flex;
+        }
+        .menu a {
+            color: aliceblue;
+        }
+        .menu a:hover{
+            color: brown;
+            }
+        .submenu{
+            position: relative;
+            padding-bottom: 10px;
+
+        }
+        .desplegable{
+            display: none;
+            width: 180px;
+            background-color: transparent;
+            top: 20px;
+            left: 0px;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            z-index: 999;
+        }
+        .desplegable li{
+            width: 100%;
+        }
+        .desplegable a{
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .desplegable a:hover{
+            background-color: blue;
+        }
+        .submenu:hover .desplegable{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ol class="menu">
+        <li>
+            <a href="../ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION2/animacion2.html">MEGAMAN</a>
+        </li> 
+        <li class="submenu">
+            <a href="#">ABEJA ▼</a>
+            <ul class="desplegable">
+                <li>
+                    <a href="../ANIMACION3/animacion3.html">
+                        Proyecto Abeja
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../ANIMACION3.1/animacion3.1.html">
+                        Proyecto Cohete
+                    </a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="../ANIMACION4/animacion4.html">TURISMO PERU</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION5/animacion5.html">HTML, CSS Y JS</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION6/animacion6.html">PROYECTO PAYASO</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION7/animacion7.html">PROYECTO PARALLAX</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION8/animacion8.html">PROYECTO PARALLAX-SVG</a>
+        </li> 
+    </ol>
+    <br>
+    <a href="../index.html">VOLVER </a>
+    <h1>PROYECTO 6</h1>
+    <p id="texto">Explorando efectos, transiciones y movimientos con HTML y CSS</p>
+    <br></br>
+    <div class="contenedorpadre">
+        <div class="contenedor">
+            <div class="piernaI"></div>
+            <div class="piernaD"></div>
+            <div class="gorrito"></div>
+            <div class="cabeza"></div>
+            <div class="cuerpo"></div>
+            <div class="brazoD"></div>
+            <div class="brazoI"></div>
+            <div class="pieD"></div>
+            <div class="pieI"></div>
+            
+        </div>
+        <div class="contenedor2">
+            <div class="gorrito2"></div>
+            <div class="cabeza2"></div>
+            <div class="cuerpo2"></div>
+            <div class="brazoD2"></div>
+            <div class="brazoI2"></div>
+            <div class="pieD2"></div>
+            <div class="pieI2"></div>
+        </div>
+    </div>
+</body>
+</html>

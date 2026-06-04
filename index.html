@@ -1,0 +1,279 @@
+<html>
+<head>
+    <title></title>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    nav{
+        height: 40px;
+        background-color: blue;
+
+    }
+    body{
+        background-image: url(img/fondo.jpg);
+        background-size: cover;
+    }
+    h1 {
+        color: aliceblue;
+        margin:0 auto;
+        text-align: center;
+    }
+    ol {
+        display: flex;
+        margin-top: 20px;
+    }
+    li {
+        margin: 0 auto;
+        display: flex;
+    }
+    .menu a {
+        color: aliceblue;
+    }
+    .menu a:hover{
+        color: brown;
+    }
+    .contenedor{
+        width: 1300px;
+        height: 750px;
+        margin: 0 auto;
+        margin-top: 60px;
+        position: relative;
+        overflow: hidden;
+    }
+    .cuadro{
+        width: 260px;
+        height: 160px;
+        border: 1px solid transparent;
+        float: left;
+        margin: 20px;
+        overflow: hidden;
+    }
+    .cuadro img{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .cuadro:hover{
+        transition: 0.5s;
+        box-shadow: 0px 0px 20px cyan;
+        scale: 1.1;
+    }
+    .cuadro p{
+        color: white;
+        width: 100px;
+        float: left;
+        margin-top: 30px;
+        margin-left: 160px;
+        font-size: 19px;
+    }
+    .musica{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .musica button{
+        width: 300px;
+        height: 60px;
+        margin: 0 auto;
+        font-size: 18px;
+        border: none;
+        border-radius: 15px;
+        background-color: cyan;
+        color: black;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0px 0px 15px cyan;
+    }
+    .musica button:hover{
+        background-color: white;
+        scale: 1.1;
+    }
+    .submenu{
+        position: relative;
+        padding-bottom: 10px;
+
+    }
+    .desplegable{
+        display: none;
+        width: 180px;
+        background-color: transparent;
+        top: 20px;
+        left: 0px;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        z-index: 999;
+    }
+    .desplegable li{
+    width: 100%;
+    }
+    .desplegable a{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .desplegable a:hover{
+        background-color: blue;
+    }
+    .submenu:hover .desplegable{
+        display: block;
+    }
+    .contenedor2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contenedor2 .cuadro{
+        float: none;
+        margin: 0 auto;
+    }
+    .contenedor2 .musica{
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <h1>MIS PROYECTOS DE ANIMACION WEB</h1>
+    </nav>
+    <ol class="menu">
+        <li>
+            <a href="ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a>
+        </li> 
+        <li>
+            <a href="ANIMACION2/animacion2.html">MEGAMAN</a>
+        </li> 
+        <li class="submenu">
+            <a href="#">ABEJA ▼</a>
+            <ul class="desplegable">
+                <li>
+                    <a href="ANIMACION3/animacion3.html">
+                        Proyecto Abeja
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ANIMACION3.1/animacion3.1.html">
+                        Proyecto Cohete
+                    </a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="ANIMACION4/animacion4.html">TURISMO PERU</a>
+        </li> 
+        <li>
+            <a href="ANIMACION5/animacion5.html">HTML, CSS Y JS</a>
+        </li> 
+        <li>
+            <a href="ANIMACION6/animacion6.html">PROYECTO PAYASO</a>
+        </li> 
+        <li>
+            <a href="ANIMACION7/animacion7.html">PROYECTO PARALLAX</a>
+        </li> 
+        <li>
+            <a href="ANIMACION8/animacion8.html">PROYECTO PARALLAX-SVG</a>
+        </li> 
+    </ol>
+    <div class="contenedor">
+
+    <a href="ANIMACION1/animacion1.html" class="cuadro">
+
+            <img src="img/ajedrez.png">
+
+            <p>
+                En el ajedrez y en la vida, piensa antes de actuar.
+            </p>
+
+    </a>
+    
+
+    <a href="ANIMACION2/animacion2.html" class="cuadro">
+
+        <img src="img/megamam.png">
+
+        <p>
+            La valentía convierte los obstáculos en victorias.
+        </p>
+    </a>
+
+
+    <a href="ANIMACION3/animacion3.html" class="cuadro">
+
+        <img src="img/abeja.png">
+
+        <p>
+            Hasta las cosas más pequeñas pueden lograr grandes cambios.
+        </p>
+    </a>
+
+    <a href="ANIMACION4/animacion4.html" class="cuadro">
+
+        <img src="img/peru.png">
+
+        <p>
+            Perú, donde cada paisaje cuenta una historia diferente.
+        </p>
+    </a>
+
+    <a href="ANIMACION5/animacion5.html" class="cuadro">
+
+        <img src="img/htmlcss.png">
+        <p>
+            La creatividad cobra vida a través del código.
+        </p>
+    </a>
+
+    <a href="ANIMACION6/animacion6.html" class="cuadro">
+
+        <img src="img/payaso.png">
+        <p>
+            Una sonrisa puede iluminar incluso el día más oscuro.
+        </p>
+    </a>
+
+    <a href="ANIMACION7/animacion7.html" class="cuadro">
+
+        <img src="img/parallax.png">
+        <p>
+            La profundidad transforma una simple vista en una experiencia.
+        </p>
+    </a>
+
+    <a href="ANIMACION8/animacion8.html" class="cuadro">
+
+        <img src="img/parallaxsvg.png">
+        <p>
+            Más allá del horizonte, siempre hay algo nuevo por explorar.
+        </p>
+    </a>
+
+    
+
+    <div class="contenedor2">
+        <div class="cuadro">
+            <img src="img/niels.png">
+            <p>
+                EFEEEEEEEEEEEEE.
+            </p>
+        </div>
+        <div class="musica">
+            <button onclick="document.getElementById('audio').play()">
+            ▶ REPRODUCIR MUSICA
+            </button>
+            <br>
+            <br>
+            <button onclick="document.getElementById('audio').pause()">
+            ⏹ PARAR MUSICA
+            </button>
+            <audio id="audio" loop>
+                <source src="music/music.mp3" type="audio/mp3">
+            </audio>
+       </div>
+    </div>
+</div>
+</body>
+</html>

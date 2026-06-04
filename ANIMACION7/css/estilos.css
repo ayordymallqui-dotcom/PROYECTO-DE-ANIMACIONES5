@@ -1,0 +1,231 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+body{
+    background-image: url(../img/fondo2.png);
+}
+.contenedor{
+    width: 600px;
+    height: 900px;
+    border: 1px solid white;
+    background-image: url(../img/contenedor2.png);
+    margin: 0 auto; /*centra el contenedor*/
+    position: relative;
+    overflow: hidden;
+
+}
+.franja1{
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/gym.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    clip-path: polygon(0 0, 100% 46%, 100% 100%, 0 55%);
+    z-index: 2;
+    animation: franja1 30s 1 forwards;
+
+}
+@keyframes franja1 {
+    from{
+        scale: 100%;
+        filter:blur(5px);
+    }
+        to{
+        scale: 150%;
+        filter:blur(0px);
+    }
+}
+
+.franja2{
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    position: absolute;
+    top: 460px;
+    left: 60px;
+    clip-path: polygon(0 0, 100% 22%, 100% 100%, 0 100%);
+    z-index: 3;
+
+}
+.franja3{
+    width: 600px;
+    height: 700px;
+    background-image: url(../img/negro.jpg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    z-index: 1;
+}
+.modelo{
+    width: 400px;
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+    animation: modelo 15s 1 forwards;
+
+}
+@keyframes modelo {
+    from{
+        top: 250px;
+        scale: 80%;
+        filter:grayscale(100%);
+    }
+    to{
+        top: 200px;
+        scale: 120%;
+        filter:grayscale(0%);
+
+    }
+}
+a:hover {
+    color:rgb(255, 4, 4);
+}
+a {
+    color: aliceblue;        
+}
+.titulo{
+    position: absolute;
+    border: 2px black;
+    top: 40px;
+    right: 20px;
+    color: white;
+    font-size: 35px;
+    z-index: 10;
+    font-family: Arial Black;
+}
+.amarillo{
+    color: yellow;
+}
+.programa{
+    position: absolute;
+    left: 90px;
+    top: 535px;
+    color: black;
+    font-size: 42px;
+    line-height: 38px;
+    font-family: Arial black  ;
+    z-index: 20;
+    animation: programa 4s 1 forwards;
+}
+@keyframes programa {
+    from{
+        opacity: 0%;
+        left: 20px;
+        filter: blur(5px);
+    }
+    to{
+        opacity: 100%;
+        left: 90px;
+        filter: blur(0px);
+    }
+}
+.lista{
+    position: absolute;
+    left: 90px;
+    top: 630px;
+    color: black;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: Arial;
+    z-index: 20;
+    animation: lista 5s 1 forwards;
+}
+@keyframes lista {
+    from{
+        opacity: 0%;
+        top: 700px;
+        filter: blur(5px);
+    }
+    to{
+        opacity: 100%;
+        top: 630px;
+        filter: blur(0px);
+    }
+}
+.redes{
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    bottom: 40px;
+
+    z-index: 999;
+}
+
+.redes a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.redes a:hover{
+    color: yellow;
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+    margin:0 auto;
+    font-size: 50px;
+
+}
+#texto{
+    Color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+a:hover {
+    color:rgb(255, 4, 4);
+}
+a {
+    color: aliceblue;
+}
+ol {
+    display: flex;
+    margin-top: 20px;
+}
+li {
+    margin: 0 auto;
+    display: flex;
+}
+.menu a {
+    color: aliceblue;
+}
+.menu a:hover{
+    color: brown;
+    }
+.submenu{
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.desplegable{
+    display: none;
+    width: 180px;
+    background-color: transparent;
+    top: 20px;
+    left: 0px;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    z-index: 999;
+}
+.desplegable li{
+    width: 100%;
+}
+.desplegable a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.desplegable a:hover{
+    background-color: blue;
+}
+.submenu:hover .desplegable{
+    display: block;
+}

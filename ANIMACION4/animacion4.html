@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>TURISMO PERÚ</title>
+<style>
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image: url(img/fondo4.png);
+    background-size: cover;
+}
+.contenedor{
+    width: 800px;
+    height:300px;
+    border:1px solid black;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4{
+    width:200px;
+    height:300px;
+    position: absolute;
+    top: -300px;
+    background-size: cover;
+}
+.tarjeta1{
+    background-image: url(img/mar.jpg);
+    left:0px;
+    animation: tarjeta1 3s 1 forwards;
+    
+}
+.tarjeta2{
+    background-image: url(img/costa.jpg);
+    left:200px;
+    top: -300px;
+    animation: tarjeta1 3s 1 forwards 3s;
+}
+.tarjeta3{
+    background-image: url(img/selva.jpg);
+    left:400px;
+    animation: tarjeta1 3s 1 forwards 6s;
+}
+.tarjeta4{
+    background-image: url(img/sierra.jpg);
+    left:600px;
+    animation: tarjeta1 3s 1 forwards 9s;
+}
+
+
+/*LAS RICAS ANIMACIONES*/
+@keyframes tarjeta1{
+    0%{
+        top:-300px;
+        transform: rotateY(180deg);
+    }
+    50%{
+        top:300px;
+    }
+    100%{
+        top:0px;
+        
+    }
+}
+@keyframes mostrartitulo {
+    0%  { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+
+}
+.titulo{
+    width: 800px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    animation: mostrartitulo 1s forwards 12s;
+
+}
+.titulo h1{
+    color: yellow;
+    font-family: sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    
+}
+/*eventos*/
+.tarjeta1:hover{
+    transition: 1s;
+    scale: 1.1;
+    z-index: 1;
+}
+.tarjeta2:hover{
+    transition: 1s;
+    scale: 1.1;
+    z-index: 1;
+}
+.tarjeta3:hover{
+    transition: 1s;
+    scale: 1.1;
+    z-index: 1;
+}
+.tarjeta4:hover{
+    transition: 1s;
+    scale: 1.1;
+    z-index: 1;
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+    margin:0 auto;
+    font-size: 50px;
+
+}
+#texto{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+a:hover {
+    color:rgb(255, 0, 0);
+}
+a {
+    color: aliceblue;
+}
+ol {
+    display: flex;
+    margin-top: 20px;
+}
+li {
+    margin: 0 auto;
+    display: flex;
+}
+.menu a {
+    color: aliceblue;
+}
+.menu a:hover{
+    color: brown;
+    }
+.submenu{
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.desplegable{
+    display: none;
+    width: 180px;
+    background-color: transparent;
+    top: 20px;
+    left: 0px;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    z-index: 999;
+}
+.desplegable li{
+    width: 100%;
+}
+.desplegable a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.desplegable a:hover{
+    background-color: blue;
+}
+.submenu:hover .desplegable{
+    display: block;
+}
+</style>
+</head>
+<body>
+    <ol class="menu">
+        <li>
+            <a href="../ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION2/animacion2.html">MEGAMAN</a>
+        </li> 
+        <li class="submenu">
+            <a href="#">ABEJA ▼</a>
+            <ul class="desplegable">
+                <li>
+                    <a href="../ANIMACION3/animacion3.html">
+                        Proyecto Abeja
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../ANIMACION3.1/animacion3.1.html">
+                        Proyecto Cohete
+                    </a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="../ANIMACION4/animacion4.html">TURISMO PERU</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION5/animacion5.html">HTML, CSS Y JS</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION6/animacion6.html">PROYECTO PAYASO</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION7/animacion7.html">PROYECTO PARALLAX</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION8/animacion8.html">PROYECTO PARALLAX-SVG</a>
+        </li> 
+    </ol>
+    <br>
+    <a href="../index.html">VOLVER </a>
+    <h1>PROYECTO 4</h1>
+        <p id="texto">Explorando efectos, transiciones y movimientos con HTML y CSS</p>
+        <br></br>
+    <div class="contenedor">
+        <div class="tarjeta1"></div>
+        <div class="tarjeta2"></div>    
+        <div class="tarjeta3"></div>
+        <div class="tarjeta4"></div>
+        <div class="titulo">
+            <h1>TURISMO PERU</h1>
+            </div>
+    </div>    
+</body>
+</html>

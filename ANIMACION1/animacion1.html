@@ -1,0 +1,230 @@
+    <html>
+    <head>
+        <title>ESTILOS CCS 1</title>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+                
+            }
+            body{
+                background-image: url(img/fondo1.jpg);
+                background-size: cover;
+                
+            }
+
+            #cuadrito1, #cuadrito2{
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                float: left;
+            }
+            #cuadrito1{
+                background-color: white;
+            }
+            #cuadrito2{
+                background-color: rgb(70, 32, 0);
+            }
+            #contenedor1{
+                height: 52px;
+                width: 416px;
+                background-color: black;
+                margin: 0 auto;
+                position: relative;
+            }
+            #tablero{
+                margin-top: 50px;
+                margin: 0 auto;
+            }
+            a:hover {
+                color:rgb(255, 0, 0);
+            }
+            a {
+                color: aliceblue;
+            }
+            h1{
+                text-align: center;
+                color: aliceblue;
+                margin:0 auto;
+                font-size: 50px;
+            }
+            #texto{
+                color: white;
+                text-align: center;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            ol {
+                display: flex;
+                margin-top: 20px;
+            }
+            li {
+                margin: 0 auto;
+                display: flex;
+            }
+            .menu a {
+                color: aliceblue;
+            }
+            .menu a:hover{
+                color: brown;
+            }
+            .submenu{
+                position: relative;
+                padding-bottom: 10px;
+
+            }
+            .desplegable{
+                display: none;
+                width: 180px;
+                background-color: transparent;
+                top: 20px;
+                left: 0px;
+                position: absolute;
+                list-style: none;
+                padding: 0;
+                z-index: 999;
+            }
+            .desplegable li{
+                width: 100%;
+            }
+            .desplegable a{
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+            }
+            .desplegable a:hover{
+                background-color: blue;
+            }
+            .submenu:hover .desplegable{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="menu">
+        <li>
+            <a href="../ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION2/animacion2.html">MEGAMAN</a>
+        </li> 
+        <li class="submenu">
+            <a href="#">ABEJA ▼</a>
+            <ul class="desplegable">
+                <li>
+                    <a href="../ANIMACION3/animacion3.html">
+                        Proyecto Abeja
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../ANIMACION3.1/animacion3.1.html">
+                        Proyecto Cohete
+                    </a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="../ANIMACION4/animacion4.html">TURISMO PERU</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION5/animacion5.html">HTML, CSS Y JS</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION6/animacion6.html">PROYECTO PAYASO</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION7/animacion7.html">PROYECTO PARALLAX</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION8/animacion8.html">PROYECTO PARALLAX-SVG</a>
+        </li> 
+    </ol>
+    <br>
+    <a href="../index.html">VOLVER </a>
+        <h1>PROYECTO 1</h1>
+        <p id="texto">
+            Explorando efectos, transiciones y movimientos con HTML y CSS
+        </p>
+        <br></br>
+    <div id=tablero>
+        <div id="contenedor1">
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+        </div>
+
+        <div id="contenedor1">  
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+        </div>
+
+        <div id="contenedor1">  
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+        </div>
+        <div id="contenedor1">  
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+        </div>
+
+        <div id="contenedor1">  
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+        </div>
+        <div id="contenedor1">  
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+        </div>
+
+        <div id="contenedor1">  
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+            <div id="cuadrito2"></div>
+            <div id="cuadrito1"></div>
+        </div>
+    </div>
+    </body>
+    </html>
+
+
+

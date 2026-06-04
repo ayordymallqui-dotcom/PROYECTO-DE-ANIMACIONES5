@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../img/FONDO_PAG.jpg);
+}
+.NOMBRE{
+    width: 350px;
+    height: 300px;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 5px;
+    opacity: 0;
+    position: absolute;
+    top: 210px;
+    left: 210px;
+    z-index: 5;
+    animation: NOMBRE 10s 1 forwards 4s;
+
+}
+@keyframes NOMBRE {
+    from{
+        fill: transparent;
+        opacity: 0;
+    }
+    to{
+        fill: red;
+        opacity: 1;
+    }
+}
+.contenedor{ 
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.FONDO{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    z-index: 3;
+    animation: FONDO 5s 1 forwards;
+}
+@keyframes FONDO {
+    from{
+        transform: scale(1.2);
+        filter: grayscale(80%);
+    }
+    to{
+        transform: scale(1.4); 
+        filter: grayscale(0%);
+
+    }
+}
+.HOJAS{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    animation: HOJAS 10s 1 forwards;
+}
+@keyframes HOJAS {
+    from{
+        transform: scale(1);
+        filter:blur(4px);
+        opacity: 1;
+    }
+    to{
+        transform: scale(1.3);
+        filter:blur(0px);
+        opacity: 0;
+    }
+}
+a:hover {
+    color:rgb(255, 4, 4);
+}
+a {
+    color: aliceblue;        
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+    margin:0 auto;
+    font-size: 50px;
+
+}
+#texto{
+    Color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+a:hover {
+    color:rgb(255, 4, 4);
+}
+a {
+    color: aliceblue;
+}
+ol {
+    display: flex;
+    margin-top: 20px;
+}
+li {
+    margin: 0 auto;
+    display: flex;
+}
+.menu a {
+    color: aliceblue;
+}
+.menu a:hover{
+    color: brown;
+    }
+.submenu{
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.desplegable{
+    display: none;
+    width: 180px;
+    background-color: transparent;
+    top: 20px;
+    left: 0px;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    z-index: 999;
+}
+.desplegable li{
+    width: 100%;
+}
+.desplegable a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.desplegable a:hover{
+    background-color: blue;
+}
+.submenu:hover .desplegable{
+    display: block;
+}

@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title></title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-image: url(img/fondo2.jpg);
+        background-size: cover;
+    }
+    #contenedor{
+        width: 400px;
+        height: 200px;
+        background-image: url(img/mapa.jpg);
+        background-size: cover;
+        border: 1px solid black;
+        position:relative;
+        margin:0 auto; /*centrar el contenedor*/
+        overflow: hidden; /*oculta todo lo que contiene*/
+    }
+    #cuadrito{
+        width: 100px;
+        height: 100px;
+        position: absolute; /*Obligatorio para mover el div*/
+        top:105px;
+        left:-100px;
+
+        animation: cuadrito 3s infinite;
+        animation-timing-function: linear; /*define la forma de moverse*/
+    }
+    @keyframes cuadrito{
+        from{
+            left:-100px;
+        }
+        to{
+            left:500px;
+        }
+    }
+
+    #cuadrito img{
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        text-align: center;
+        color: aliceblue;
+        margin:0 auto;
+        font-size: 50px;
+
+    }
+    #texto{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    a:hover {
+        color:rgb(255, 0, 0);
+    }
+    a {
+        color: aliceblue;
+    }
+    ol {
+        display: flex;
+        margin-top: 20px;
+    }
+    li {
+        margin: 0 auto;
+        display: flex;
+    }
+    .menu a {
+        color: aliceblue;
+    }
+    .menu a:hover{
+        color: brown;
+    }
+    .submenu{
+        position: relative;
+        padding-bottom: 10px;
+
+    }
+    .desplegable{
+        display: none;
+        width: 180px;
+        background-color: transparent;
+        top: 20px;
+        left: 0px;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        z-index: 999;
+    }
+    .desplegable li{
+        width: 100%;
+    }
+    .desplegable a{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .desplegable a:hover{
+        background-color: blue;
+    }
+    .submenu:hover .desplegable{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <ol class="menu">
+        <li>
+            <a href="../ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION2/animacion2.html">MEGAMAN</a>
+        </li> 
+        <li class="submenu">
+            <a href="#">ABEJA ▼</a>
+            <ul class="desplegable">
+                <li>
+                    <a href="../ANIMACION3/animacion3.html">
+                        Proyecto Abeja
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../ANIMACION3.1/animacion3.1.html">
+                        Proyecto Cohete
+                    </a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="../ANIMACION4/animacion4.html">TURISMO PERU</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION5/animacion5.html">HTML, CSS Y JS</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION6/animacion6.html">PROYECTO PAYASO</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION7/animacion7.html">PROYECTO PARALLAX</a>
+        </li> 
+        <li>
+            <a href="../ANIMACION8/animacion8.html">PROYECTO PARALLAX-SVG</a>
+        </li> 
+    </ol>
+    <br>
+    <a href="../index.html">VOLVER </a>
+    <h1>PROYECTO 2</h1>
+    <p id="texto">Explorando efectos, transiciones y movimientos con HTML y CSS</p>
+    <br></br>
+    <div id="contenedor">
+
+        <div id="cuadrito">
+
+            <img src="img/megamanx.gif" alt="">
+
+        </div>
+
+    </div>
+</body>
+</html>
