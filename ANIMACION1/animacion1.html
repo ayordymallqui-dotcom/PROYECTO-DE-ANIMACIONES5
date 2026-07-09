@@ -75,73 +75,76 @@
             }
             .desplegable{
                 display: none;
-                width: 180px;
-                background-color: transparent;
-                top: 20px;
-                left: 0px;
                 position: absolute;
+                top: 100%;      /* Debajo del botón PROYECTOS */
+                left: 0;
+                width: 280px;
+                background-color: #0aa19e; /* Fondo oscuro */
+                border: 2px solid cyan;
+                border-radius: 10px;
                 list-style: none;
-                padding: 0;
-                z-index: 999;
+                padding: 8px 0;
+                z-index: 9999;
+                box-shadow: 0 0 15px cyan;
+
             }
             .desplegable li{
+                display: block;
                 width: 100%;
+                margin: 0;
             }
             .desplegable a{
-                padding: 10px;
+                display: block;
+                padding: 12px 20px;
                 color: white;
                 text-decoration: none;
+                font-size: 17px;
             }
             .desplegable a:hover{
-                background-color: blue;
+            background-color: rgb(255, 255, 255);
             }
+            
             .submenu:hover .desplegable{
                 display: block;
             }
         </style>
     </head>
     <body>
-        <ol class="menu">
-        <li>
-            <a href="../ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a>
-        </li> 
-        <li>
-            <a href="../ANIMACION2/animacion2.html">MEGAMAN</a>
-        </li> 
-        <li class="submenu">
-            <a href="#">ABEJA ▼</a>
-            <ul class="desplegable">
-                <li>
-                    <a href="../ANIMACION3/animacion3.html">
-                        Proyecto Abeja
-                    </a>
-                </li>
+        <a href="../index.html">VOLVER </a>
+        <br><br>
+        <ul class="menu">
 
-                <li>
-                    <a href="../ANIMACION3.1/animacion3.1.html">
-                        Proyecto Cohete
-                    </a>
-                </li>
-            </ul>
-        </li> 
-        <li>
-            <a href="../ANIMACION4/animacion4.html">TURISMO PERU</a>
-        </li> 
-        <li>
-            <a href="../ANIMACION5/animacion5.html">HTML, CSS Y JS</a>
-        </li> 
-        <li>
-            <a href="../ANIMACION6/animacion6.html">PROYECTO PAYASO</a>
-        </li> 
-        <li>
-            <a href="../ANIMACION7/animacion7.html">PROYECTO PARALLAX</a>
-        </li> 
-        <li>
-            <a href="../ANIMACION8/animacion8.html">PROYECTO PARALLAX-SVG</a>
-        </li> 
-    </ol>
+            <li class="submenu">
+
+                <a href="#">PROYECTOS ▼</a>
+
+                <ul class="desplegable">
+
+                    <li><a href="ANIMACION1/animacion1.html">TABLERO DE AJEDREZ</a></li>
+
+                    <li><a href="ANIMACION2/animacion2.html">MEGAMAN</a></li>
+
+                    <li><a href="ANIMACION3/animacion3.html">PROYECTO ABEJA</a></li>
+
+                    <li><a href="ANIMACION3.1/animacion3.1.html">PROYECTO COHETE</a></li>
+
+                    <li><a href="ANIMACION4/animacion4.html">TURISMO PERÚ</a></li>
+
+                    <li><a href="ANIMACION5/animacion5.html">HTML, CSS Y JS</a></li>
+
+                    <li><a href="ANIMACION6/animacion6.html">PROYECTO PAYASO</a></li>
+
+                    <li><a href="ANIMACION7/animacion7.html">PROYECTO PARALLAX</a></li>
+
+                    <li><a href="ANIMACION8/animacion8.html">PROYECTO PARALLAX SVG</a></li>
+
+                    <li><a href="VIDEO_BLENDER/VIDEO.HTML">VIDEO BLENDER</a></li>
+
+                </ul>
+
+            </li>
+        </ul>
     <br>
-    <a href="../index.html">VOLVER </a>
         <h1>PROYECTO 1</h1>
         <p id="texto">
             Explorando efectos, transiciones y movimientos con HTML y CSS
